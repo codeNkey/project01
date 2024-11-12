@@ -23,6 +23,86 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "test", webpackPrefetch:true */ '../views/TestView.vue')
   },
+  {
+    path: '/string',
+    name:'string',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/DataBindingStringView.vue')
+  },
+  {
+    path: '/html',
+    name:'html',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/HtmlView.vue')
+  },
+  {
+    path: '/attribute',
+    name:'attribute',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/AttributeView.vue')
+  },
+  {
+    path: '/class',
+    name:'class',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/ClassView.vue')
+  },
+  {
+    path: '/input',
+    name:'input',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/InputView.vue')
+  },
+  {
+    path: '/list',
+    name:'list',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/ListView.vue')
+  },
+  {
+    path: '/check',
+    name:'check',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/CheckBoxSelectRadioView.vue')
+  },
+  {
+    path: '/cal',
+    name:'cal',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/CalView.vue')
+  },
+  {
+    path: '/cal1',
+    name:'cal1',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/CalView1.vue')
+  },
+  {
+    path: '/calcul',
+    name:'calcul',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/CalculatorView.vue')
+  },
 ]
 
 const router = createRouter({

@@ -1,3 +1,20 @@
 <template>
-  <h1>Vue</h1>
+<div>vue</div>
 </template>
+<script>
+
+export default{ 
+  name:'',
+  components:{},
+  data(){
+    return{
+      sampleData:''
+    };
+  },
+  setup(){},
+  created(){},
+  mounted(){},
+  unmounted(){},
+  methods:{}
+}
+</script>
