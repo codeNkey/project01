@@ -11,7 +11,7 @@
 export default {
   data() {
     return {
-      count: 0,      // 좋아요 수
+      count: 0, // 좋아요 수
       isLiked: false // 좋아요를 눌렀는지 여부
     };
   },
