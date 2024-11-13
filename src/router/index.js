@@ -103,6 +103,62 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "DataBinding", webpackPrefetch:true */ '../views/DataBinding/CalculatorView.vue')
   },
+  {
+    path: '/click',
+    name:'click',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */ '../views/Event/ClickView.vue')
+  },
+  {
+    path: '/change',
+    name:'change',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */ '../views/Event/ChangeView.vue')
+  },
+  {
+    path: '/key',
+    name:'key',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "event", webpackPrefetch:true */ '../views/Event/KeyView.vue')
+  },
+  {
+    path: '/render',
+    name:'render',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "extra", webpackPrefetch:true */ '../views/Extra/RenderView.vue')
+  },
+  {
+    path: '/show',
+    name:'show',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "extra", webpackPrefetch:true */ '../views/Extra/RenderShowView.vue')
+  },
+  {
+    path: '/com',
+    name:'com',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "extra", webpackPrefetch:true */ '../views/Extra/ComputedView.vue')
+  },
+  {
+    path: '/watch',
+    name:'watch',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "extra", webpackPrefetch:true */ '../views/Extra/WatchView.vue')
+  },
 ]
 
 const router = createRouter({

@@ -2,7 +2,8 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/test">Binding</router-link>
+    <router-link to="/render">Extra</router-link> |
+    <router-link to="/show">Show</router-link>
     <!-- <router-link to="/string">String</router-link>  -->
     
     
