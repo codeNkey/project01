@@ -160,12 +160,44 @@ const routes = [
     component: () => import(/* webpackChunkName: "extra", webpackPrefetch:true */ '../views/Extra/WatchView.vue')
   },
   {
-    path: '/test',
-    name:'test',
+    path: '/life',
+    name:'life',
      // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "test", webpackPrefetch:true */ '../views/Test/TestvView.vue')
+    component: () => import(/* webpackChunkName: "test", webpackPrefetch:true */ '../views/Extra/LifeCycleView.vue')
+  },
+  {
+    path: '/page',
+    name:'page',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/Reuse/PageView.vue')
+  },
+  {
+    path: '/parent',
+    name:'parent',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/Reuse/ParentView.vue')
+  },
+  {
+    path: '/table',
+    name:'table',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/Reuse/TableView.vue')
+  },
+  {
+    path: '/grid',
+    name:'gird',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/Reuse/GridView.vue')
   },
 ]
 

@@ -3,11 +3,10 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/render">Extra</router-link> |
-    <router-link to="/show">Show</router-link>
+    <router-link to="/show">Show</router-link> |
+    <router-link to="/cycle">Cycle</router-link> |
+    <router-link to="/table">Reuse</router-link> 
     <!-- <router-link to="/string">String</router-link>  -->
-    
-    
-
   </nav>
   <router-view/> 
 </template>
