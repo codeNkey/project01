@@ -4,11 +4,6 @@
     <router-link to="/test">Test</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/render">Extra</router-link> |
-    <router-link to="/show">Show</router-link>
-    
-    
-    
-
   </nav>
   <router-view/> 
 </template>
