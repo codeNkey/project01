@@ -1,35 +1,36 @@
 <template>
-<div>
-  <input type="text" value="userId">
-  <button  @click="checkId()">ID_CHCEK</button>
-  <input type="text" :value="user">
-</div>
+  <div>
+    <h1>Hello</h1>
+  </div>
 </template>
 <script>
 
-export default{ 
-  name:'',
-  components:{},
-  data(){
-    return{
-      userId: '',
-      myImages: 'cat.jpg',
-      title: '예쁜고양이',
-      styleCat: {
-        color: 'blue',
-        fontsize: '30px'
-      },
-      test1: ''
+export default {
+  name: '',
+  components: {},
+  data() {
+    return {
+      name: 'value',
+      
     };
   },
-  setup(){},
-  created(){},
-  mounted(){},
-  unmounted(){},
-  methods:{
-    checkId() {
-      console.log('heejin')
+  computed: {
+    func() {
+      return '함수 실행 결과'
     }
+  },
+    mounted() {
+      console.log('mounted')
+      console.log(document.querySelector('h1'))
+    },
+  created() {
+    console.log(this.name)
+    console.log("created")
+    console.log(document.querySelector('h1'))
+
+  },
+  methods: {
+    
   }
 }
 </script>
