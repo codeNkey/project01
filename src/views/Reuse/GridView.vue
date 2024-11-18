@@ -1,7 +1,7 @@
 <template>
 <div>
     <button class="btn btn-primary" @click="startSearch">자료 조사 시작</button>&emsp;
-    <button class="btn btn-danger" @click="">삭제</button>
+    <button class="btn btn-danger" @click="delSearch">삭제</button>
     <br>
     <br>
 <Simple 
@@ -62,6 +62,7 @@ export default{
                 diff : "전일 상승"
             }]
             this.allData = this.dataBase
+            this.delData = this.dataBase
         },
         changeDiff (data) {
             if (data === 'high') {
@@ -82,6 +83,9 @@ export default{
                 console.log(data)
                 this.dataBase = this.allData
             }
+                
+            },
+            delSearch () {
                 
             }
                       
