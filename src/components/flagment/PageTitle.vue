@@ -2,13 +2,14 @@
 <div>
     <h1>{{title}}</h1>
     <p>{{number}}</p>
+    <ChiilComponent/>
 </div>
 </template>
 <script>
-
+import ChildComponent from './ChildComponent.vue';
 export default{ 
     name:'',
-    components:{},
+    components:{ChildComponent},
     props: {
         title : {
             type: String,

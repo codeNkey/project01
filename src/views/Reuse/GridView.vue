@@ -1,13 +1,15 @@
 <template>
 <div>
     <button class="btn btn-primary" @click="startSearch">자료 조사 시작</button>&emsp;
-    <button class="btn btn-danger" @click="delSearch">삭제</button>
+    <button class="btn btn-danger" @click="doDelete">삭제</button>
     <br>
     <br>
 <Simple 
 :headers="headers"
 :items="dataBase"
 @diff-change='changeDiff'
+@change-item='checkBoxSelected'
+
 />
 </div>
 </template>
@@ -20,13 +22,13 @@ export default{
         return{
             dataBase : [],
             headers : [
-                
                 {title:'국가', key: 'exchange'},
                 {title:'살때', key: 'sale'},
                 {title:'팔때', key: 'buy'},
                 {title:'변경', key: 'diff'},
             ],
-            allData: []
+            allData: [],
+            checkedItems : [],
             
 
         };
@@ -85,11 +87,21 @@ export default{
             }
                 
             },
-            delSearch () {
-                
-            }
-                      
-        }
+            checkBoxSelected (data) {
+                console.log(data)
+                this.checkedItems = data
+            },
+                radioSelected (data) {
+                    this.radioItems = data    
+                },
+            doDelete() {
+                this.dataBase = this.dataBase.filter(
+                    (data) => !this.checkedItems.includes(data.exchange)
+                )
+            },
+             
+            },
+             
     }
 
 </script>

@@ -159,7 +159,38 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "extra", webpackPrefetch:true */ '@/views/Extra/WatchView.vue')
   },
-  
+  {
+    path: '/grid',
+    name:'grid',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '@/views/Reuse/GridView.vue')
+  },
+  {
+    path: '/slot',
+    name:'slot',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '@/views/Reuse/SlotView.vue')
+  },
+  {
+    path: '/root',
+    name:'root',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '@/views/Reuse/RootView.vue')
+  },
+  {
+    path: '/custom',
+    name:'custom',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '@/views/Advenced/CustomView.vue')
+  },
 ]
 
 const router = createRouter({
