@@ -191,6 +191,22 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '@/views/Advenced/CustomView.vue')
   },
+  {
+    path: '/mix',
+    name:'mix',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '@/views/Advenced/MixinView.vue')
+  },
+  {
+    path: '/plug',
+    name:'plug',
+     // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "reuse", webpackPrefetch:true */ '@/views/Advenced/PluginView.vue')
+  },
 ]
 
 const router = createRouter({

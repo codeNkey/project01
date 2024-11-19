@@ -16,11 +16,14 @@ export default{
             
         };
     },
-    provide() {
+    provide: function() {
 return {deepChildData : '새로운 문자'}
     },
     setup(){},
     created(){},
+    directives: {
+
+    },
     mounted(){},
     unmounted(){},
     methods:{}
