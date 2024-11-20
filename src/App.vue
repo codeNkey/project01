@@ -2,7 +2,6 @@
 <div>
 <HeaderLayout/>
 <div class="container">
-  
 </div>
   </div>
   <router-view/> 

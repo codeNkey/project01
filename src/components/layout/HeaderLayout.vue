@@ -43,12 +43,11 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item"  ></a></li>
             <li><a class="dropdown-item" @click="goToMenu('/plug')">plug</a></li>
+            <li><a class="dropdown-item" @click="goToMenu('/vuex')">Vuex</a></li>
             
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+       
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
